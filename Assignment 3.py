@@ -99,3 +99,9 @@ plt.title('Clustermap of Gene Expression by Sample')
 plt.xlabel('Sample')
 plt.ylabel('Gene')
 plt.show()
+
+# g .write a few sentences of analysis
+#scatter plot of fold change indicates the significant variation in gene expression between tumor and normal samples exhibiting foldcahnges greater than 5.
+# Histogram of DEG by chromosome indicates the non uniform distribution of DEG's across the chromosome implicating the tumors genomic regions
+# the higher percentage of upregulated genes in tumor samples compared to down regulated suggests shifts towards gene expression levels in tumor samples.
+# the heat map and cluster map provide the understanding of the correaltion and clustering  patterns of gene expression. this analysis comprehensively emphasize the importance of understanding of gene expression in biology.
