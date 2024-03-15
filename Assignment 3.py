@@ -48,9 +48,9 @@ fold_change_genes['Higher_Expression'] = np.where(fold_change_genes['Fold_Change
 fold_change_genes = pd.merge(fold_change_genes, df2[['Probe_ID', 'Chromosome']], on='Probe_ID', how='left')
 
 # a.Perform exploratory data analysis on the genes from part 1g
-plt.boxplot(fold_change_genes['Fold_Change'])
+plt.scatter(range(len(fold_change_genes['Fold_Change'])), fold_change_genes['Fold_Change'])
+plt.title('Scatter Plot of Fold Change Values')
 plt.xlabel('Fold Change')
-plt.title('Box Plot of Fold Change Values')
 plt.show()
 
 # b. Histogram of DEGs by Chromosome
